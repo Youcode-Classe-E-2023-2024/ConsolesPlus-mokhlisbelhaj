@@ -1,0 +1,313 @@
+/* color  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.white {
+    color: white;
+}
+
+.red {
+    color: red
+}
+
+.magenta {
+    color: #FF00F5;
+}
+
+.green {
+    color: #00FF47;
+}
+
+.bleu {
+    color: #1400FF;
+}
+
+.bg-black {
+    background-color: black;
+    color: white;
+}
+
+.row {
+    display: table;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.col {
+    float: left;
+    width: 100%;
+}
+
+/* flex  */
+.d-flex {
+    display: flex;
+}
+
+.d-none {
+    display: none;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+nav {
+    height: 50px;
+    background-color: rgba(181, 185, 185, 0.155);
+    backdrop-filter: blur(10px);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.logo {
+    width: 20%;
+    height: 100%;
+}
+
+.home::after {
+    content: "Home";
+
+}
+
+.home::before {
+    content: "\f10c";
+    font-family: 'FontAwesome';
+    display: none;
+    font-size: 40px;
+    align-items: center;
+    margin-top: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.home:hover::after {
+    display: none;
+}
+
+.home:hover::before {
+    display: flex;
+    position: relative;
+}
+
+.Magazine::after {
+    content: "Magazine";
+
+}
+
+.Magazine::before {
+    content: "\f096";
+    font-family: "FontAwesome";
+    display: none;
+    font-size: 40px;
+    align-items: center;
+    margin-top: 0;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+
+}
+
+.Magazine:hover::after {
+    display: none;
+}
+
+.Magazine:hover::before {
+    display: flex;
+    position: relative;
+}
+.contact::after {
+    content: "Contact";
+
+}
+
+.contact::before {
+    content: "\f00d";
+    font-family: "FontAwesome";
+    display: none;
+    font-size: 40px;
+    align-items: center;
+    margin-top: 0;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+
+}
+
+.contact:hover::after {
+    display: none;
+}
+
+.contact:hover::before {
+    display: flex;
+    position: relative;
+}
+.apropos::after {
+    content: "A propos";
+
+}
+
+.apropos::before {
+    content: ""; 
+    width:30px;
+    height: 30px;
+    background-image: url('./images/triangle.png'); 
+    background-size:cover; 
+    position: relative;
+    z-index: 10;
+    /* background-repeat: no-repeat; */
+    display: none;
+
+}
+
+.apropos:hover::after {
+    display: none;
+}
+
+.apropos:hover::before {
+    display: flex;
+    position: relative;
+}
+
+.list-none {
+    list-style: none;
+}
+
+.col-img {
+    width: 35%;
+
+}
+
+@media (min-width: 601px) {
+
+    .col.m1 {
+        width: 8.33333%
+    }
+
+    .col.m2 {
+        width: 16.66666%
+    }
+
+    .col.m3 {
+        width: 24.99999%
+    }
+
+    .col.m4 {
+        width: 33.33333%
+    }
+
+    .col.m5 {
+        width: 41.66666%
+    }
+
+    .col.m6 {
+        width: 49.99999%
+    }
+
+    .col.m7 {
+        width: 58.33333%
+    }
+
+    .col.m8 {
+        width: 66.66666%
+    }
+
+    .col.m9 {
+        width: 74.99999%
+    }
+
+    .col.m10 {
+        width: 83.33333%
+    }
+
+    .col.m11 {
+        width: 91.66666%
+    }
+
+    .col.m12 {
+        width: 99.99999%
+    }
+
+    .berger {
+        display: none;
+    }
+}
+
+@media (min-width: 993px) {
+    .berger {
+        display: none;
+    }
+
+    .col.l1 {
+        width: 8.33333%
+    }
+
+    .col.l2 {
+        width: 16.66666%
+    }
+
+    .col.l3 {
+        width: 24.99999%
+    }
+
+    .col.l4 {
+        width: 33.33333%
+    }
+
+    .col.l5 {
+        width: 41.66666%
+    }
+
+    .col.l6 {
+        width: 49.99999%
+    }
+
+    .col.l7 {
+        width: 58.33333%
+    }
+
+    .col.l8 {
+        width: 66.66666%
+    }
+
+    .col.l9 {
+        width: 74.99999%
+    }
+
+    .col.l10 {
+        width: 83.33333%
+    }
+
+    .col.l11 {
+        width: 91.66666%
+    }
+
+    .col.l12 {
+        width: 99.99999%
+    }
+}
+
+@media (max-width:600px) {
+    .test {
+        display: none;
+    }
+
+    .berger {
+        display: block;
+        border: none;
+        outline: none;
+        padding: 10px;
+        background: none;
+    }
+}
