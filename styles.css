@@ -12,6 +12,11 @@
     color: red
 }
 
+.bg-red {
+    background-color: red;
+    color: white;
+}
+
 .magenta {
     color: #FF00F5;
 }
@@ -33,6 +38,7 @@
     display: table;
 }
 
+
 a {
     text-decoration: none;
 
@@ -46,6 +52,15 @@ a {
 /* flex  */
 .d-flex {
     display: flex;
+
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    flex-direction: column;
 }
 
 .d-none {
@@ -56,11 +71,81 @@ a {
     justify-content: space-between;
 }
 
+.j-c-center {
+    justify-content: center;
+}
+
+.bg-slide {
+    top: 50px;
+    position: absolute;
+
+    width: 100vw;
+    background-size: cover;
+    height: 89vh;
+    animation: changeBackground 25s infinite;
+}
+
+
+@keyframes changeBackground {
+    0% {
+        background-image: url(./images/1331849.png);
+    }
+
+    33.33% {
+        background-image: url(./images/1332401.jpeg);
+    }
+
+    66.66% {
+        background-image: url(./images/403642.jpg);
+    }
+
+    100% {
+        background-image: url(./images/625497.jpg);
+    }
+}
+
+footer {
+    align-items: center;
+    font-size: 0.3em;
+}
+
+
+.text-stroke:hover {
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.side-bar {
+    position: fixed;
+    z-index: 10;
+    top: 50px;
+    text-align: center;
+    right: -100%;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(181, 185, 185, 0.155);
+    backdrop-filter: blur(10px);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.side-bar ul li {
+    padding: 0% 10% 10% 10%;
+}
+
+
+
+
 .align-center {
     align-items: center;
 }
 
 nav {
+    position: fixed;
+    z-index: 10;
     height: 50px;
     background-color: rgba(181, 185, 185, 0.155);
     backdrop-filter: blur(10px);
@@ -90,6 +175,29 @@ nav {
     margin-top: 0;
     width: 20px;
     height: 20px;
+}
+
+.home-btn {
+    border-radius: 10px;
+    height: fit-content;
+    width: fit-content;
+    color: #1400FF;
+    padding: 10px;
+    font-family: Gravitas One;
+    font-size: 0.3em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+
+
+}
+
+.home-btn:hover {
+    box-shadow: 3px 3px 5px 5px rgb(0, 0, 0);
+    font-size: 1em;
 }
 
 .home:hover::after {
@@ -127,6 +235,7 @@ nav {
     display: flex;
     position: relative;
 }
+
 .contact::after {
     content: "Contact";
 
@@ -153,17 +262,18 @@ nav {
     display: flex;
     position: relative;
 }
+
 .apropos::after {
     content: "A propos";
 
 }
 
 .apropos::before {
-    content: ""; 
-    width:30px;
-    height: 30px;
-    background-image: url('./images/triangle.png'); 
-    background-size:cover; 
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url('./images/triangle.png');
+    background-size: cover;
     position: relative;
     z-index: 10;
     /* background-repeat: no-repeat; */
@@ -189,7 +299,187 @@ nav {
 
 }
 
+/* -------------------------apropospage ----------------------------------------------------*/
+.apropospage {
+    width: 100%;
+    position: relative;
+
+    top: 50px;
+    font-family: pixelify sans;
+}
+
+body {
+    font-size: 4vw;
+}
+
+.apropos-title {
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.desc {
+    padding: 5%;
+    font-size: 0.3em;
+    background-image: url(./images/Desktop_-_7.png);
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-family: initial;
+}
+
+.mission {
+    padding: 5%;
+    font-size: 0.3em;
+    border: none;
+    text-align: center;
+    font-family: initial;
+
+}
+
+.soustitre {
+    padding: 0.2em;
+    background-color: #22348E;
+    color: red;
+    font-size: 0.75em;
+    text-align: center;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+
+}
+
+.offr {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    align-items: center;
+    text-align: center;
+}
+
+.mx-1 {
+    margin: 0em 0.2em;
+}
+
+.mx-2 {
+    margin: 0em 0.3em;
+}
+
+.icon-titre {
+    font-size: 0.3em;
+}
+
+.off-icon {
+    width: 1em;
+    height: 1em;
+
+}
+
+/* ---------------------------------------contact--------------------------------------------- */
+.contactpage {
+    position: relative;
+    top: 50px;
+}
+
+.contact-img img {
+    width: 100%;
+}
+
+.contact-info {
+    font-size: 0.5em;
+}
+
+.contact-form {
+    background-color: #22348E;
+    color: black;
+}
+
+.form {
+
+    width: 80%;
+}
+
+.formhead {
+
+    flex-direction: column;
+}
+
+.nameform {
+    width: 100%;
+}
+
+input {
+    height: 40px;
+    border: 0px;
+    padding: 0em 1em;
+}
+
+.radius-5 {
+    border-radius: 8px;
+}
+
+.contact-btn {
+    margin-top: 5%;
+    background-color: #D80027;
+    float: right;
+    padding: 2% 10%;
+    border: none;
+    border-radius: 10px;
+}
+
+/* -------------------------------------mafazinepage-------------------------- */
+.magazinepage {
+    padding-top: 50px;
+
+}
+
+.card {
+    margin: 0.5em;
+    display: block;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.29) 0.18%, rgba(0, 0, 0, 0.00) 99.84%);
+    border-radius: 20px;
+    padding: 5% 1%;
+    text-align: center;
+    align-items: center;
+  
+    font-size: .6em;
+}
+
+.card img {
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 7px;
+}
+
+.card h4{
+    color: #000;
+    margin-bottom: 7px;
+}
+
+.card p {
+    font-size: .7em;
+    margin-bottom: 7px;
+}
+
+.card button {
+    font-size: 1em;
+    padding: 2%;
+   
+    color: black;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 26px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #000 100%);
+}
+.des1{
+    width: 70%;
+    font-size: .7em;
+    margin: 0 auto;
+}
+
 @media (min-width: 601px) {
+    .side-bar {
+        display: none;
+    }
 
     .col.m1 {
         width: 8.33333%
@@ -242,11 +532,20 @@ nav {
     .berger {
         display: none;
     }
+   
 }
 
 @media (min-width: 993px) {
     .berger {
         display: none;
+    }
+
+    .formhead {
+        flex-direction: row;
+    }
+
+    .nameform {
+        width: 40%;
     }
 
     .col.l1 {
@@ -309,5 +608,53 @@ nav {
         outline: none;
         padding: 10px;
         background: none;
+    }
+
+    .soustitre {
+        padding: 0.2em;
+        background-color: #22348E;
+        color: red;
+        font-size: 2em;
+        text-align: center;
+        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+
+    }
+
+    .apropos-title {
+        font-size: 1em;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .desc {
+        padding: 5%;
+        font-size: 0.5em;
+        background-image: url(./images/Desktop_-_7.png);
+        border: none;
+        border-radius: 10px;
+        text-align: center;
+        font-family: initial;
+    }
+
+    .mission {
+        padding: 5%;
+        font-size: 0.5em;
+        border: none;
+        text-align: center;
+        font-family: initial;
+
+    }
+
+    .icon-titre {
+        font-size: 0.5em;
+    }
+
+    .off-icon {
+        width: 3em;
+        height: 3em;
+    }
+    .card {
+        font-size: 1em;
     }
 }

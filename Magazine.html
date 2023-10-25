@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Document</title>
+</head>
+
+<body class="bg-black" style="height: 100vh;">
+    <section>
+        <nav class="row d-flex space-between align-center">
+            <ul class="col">
+                <li class="col list-none">
+
+                    <img class="col-img   " src="./images/logo-cnsole.png" alt="">
+                </li>
+            </ul>
+            <ul class="col  test">
+                <li class="col m3 list-none "><a class="red home" href="index.html"></a></li>
+                <li class="col m3 list-none"><a class="magenta Magazine" href="Magazine.html"></a></li>
+                <li class="col m3 list-none d-flex"><a class="green apropos" href="apropos.html"></a></li>
+                <li class="col m3 list-none"><a class="bleu contact" href="contact.html"></a></li>
+            </ul>
+
+
+            <button id="star" class="berger">
+                <i class="fa-solid fa-play white"></i>
+            </button>
+
+        </nav>
+        <div class="side-bar">
+            <ul>
+                <li class="col  list-none "><a class="red " href="index.html">home</a></li>
+                <li class="col  list-none"><a class="magenta " href="Magazine.html">Magazine</a></li>
+                <li class="col  list-none "><a class="green " href="apropos.html">apropos</a></li>
+                <li class="col  list-none"><a class="bleu " href="contact.html">contact</a></li>
+            </ul>
+        </div>
+
+    </section>
+
+
+    <section class="magazinepage ">
+        <div class="d-flex  " style="justify-content: end; ">
+            <img src="images/854342 (1).png" style=" width: 99%; background-color: blue; padding: 1% 0% 1% 1%;" alt=""
+                srcset="">
+        </div>
+        <div class="d-flex j-c-center ">
+            <div class="d-flex space-between j-c-center wrap">
+
+
+                <div class="card">
+                    <img src="images/apps.26978.14192317693538395.4ad83a19-43ed-4c50-aad1-b3cf645854b5.jfif" alt="">
+                    <h4>Sonic-frontiers</h4>
+                    <p>SEGA • Action & adventure • Family & kids</p>
+                    <button class="btndes1">Description</button>
+                    <div class="des1" hidden >
+                    
+
+                            Experience Sonic Like Never Before!
+                            
+                        Worlds are colliding in Sonic the Hedgehog’s newest high-speed adventure! In search of the
+                        missing Chaos emeralds, Sonic becomes stranded on an ancient island teeming with unusual
+                        creatures. Battle hordes of powerful enemies as you explore a breathtaking world of action,
+                        adventure, and mystery. Accelerate to new heights and experience the thrill of high-velocity,
+                        open-zone platforming freedom as you race across the five massive Starfall Islands. Jump into
+                        adventure, wield the power of the Ancients, and fight to stop these new mysterious foes. Welcome
+                        to the evolution of Sonic games!
+                        
+                        Please install the “Adventurer's Treasure Box” before starting a new game. Please note that DLC
+                        content will not be validated if installed after completing the tutorial area. Please ensure
+                        that the most recent patch is installed before installing DLC.
+                   
+                    </div>
+                </div>
+
+
+
+                <div class="card">
+                    <img src="images/apps.26978.14192317693538395.4ad83a19-43ed-4c50-aad1-b3cf645854b5.jfif" alt="">
+                    <h4>Sonic-frontiers</h4>
+                    <p>SEGA • Action & adventure • Family & kids</p>
+                    <button class="btndes1">Description</button>
+                    <div class="des1" hidden >
+                     
+
+                            Experience Sonic Like Never Before!
+                            
+                        Worlds are colliding in Sonic the Hedgehog’s newest high-speed adventure! In search of the
+                        missing Chaos emeralds, Sonic becomes stranded on an ancient island teeming with unusual
+                        creatures. Battle hordes of powerful enemies as you explore a breathtaking world of action,
+                        adventure, and mystery. Accelerate to new heights and experience the thrill of high-velocity,
+                        open-zone platforming freedom as you race across the five massive Starfall Islands. Jump into
+                        adventure, wield the power of the Ancients, and fight to stop these new mysterious foes. Welcome
+                        to the evolution of Sonic games!
+                        
+                        Please install the “Adventurer's Treasure Box” before starting a new game. Please note that DLC
+                        content will not be validated if installed after completing the tutorial area. Please ensure
+                        that the most recent patch is installed before installing DLC.
+                
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <footer class="row  col bg-black d-flex   j-c-center ">
+        Copyright © 2023-2024 Console-Plus. Tous droits réservés
+    </footer>
+
+<script>
+
+const parentDiv = document.querySelectorAll(".card");
+console.log(parentDiv[0]);
+
+parentDiv.forEach(element => {
+    const btn = element.querySelector(".btndes1");
+    const desc = element.querySelector(".des1");
+    btn.addEventListener("click", () => {
+        desc.toggleAttribute('hidden')
+    })
+    
+});
+
+
+</script>
+
+
+
+
+
+    <script src="/burger.js"></script>
+</body>
+
+</html>
